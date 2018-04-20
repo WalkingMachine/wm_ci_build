@@ -1,42 +1,44 @@
 # This is an auto generated Dockerfile for ros:desktop-full
 # generated from docker_images/create_ros_image.Dockerfile.em
-FROM ubuntu:16.04
+FROM ubuntu:xenial
 
-# install ros packages
-RUN sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-RUN apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 421C365BD9FF1F717815A3895523BAEEB01FA116
-RUN apt-get update && apt-get install -y \
-    ros-kinetic-desktop-full \
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    dirmngr \
+    gnupg2 \
     && rm -rf /var/lib/apt/lists/*
 
-# Enable Ubuntu Universe, Multiverse, and deb-src for main.
-RUN apt-get update && apt-get install -y \
-    python-software-properties \
-    apt-file
-RUN apt-get update && apt-get install -y \
-    software-properties-common
-RUN add-apt-repository "deb http://archive.ubuntu.com/ubuntu $(lsb_release -sc) main universe restricted multiverse"
-RUN apt-get update
+# setup keys and sources
+RUN apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 421C365BD9FF1F717815A3895523BAEEB01FA116
+RUN echo "deb http://packages.ros.org/ros/ubuntu xenial main" > /etc/apt/sources.list.d/ros-latest.list
 
-
-RUN apt-get install -y \
-    python-catkin-pkg \
+# install bootstrap tools
+RUN apt-get update && apt-get install --no-install-recommends -y \
     python-rosdep \
+    python-rosinstall \
+    python-vcstools \
+    python-catkin-pkg \
     python-wstool \
     ros-kinetic-catkin \
     libttspico-utils \
     mpg123 \
-    libgnutls28-dev
+    libgnutls28-dev \
+    && rm -rf /var/lib/apt/lists/*
 
-RUN source /opt/ros/kinetic/setup.bash
+# bootstrap rosdep
+RUN rosdep init \
+    && rosdep update
 
-RUN pip install gtts 
-RUN rosdep init
-RUN rosdep update
 
+# install ros packages
+ENV ROS_DISTRO kinetic
+RUN apt-get update && apt-get install -y \
+    ros-kinetic-desktop-full=1.3.1-0* \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN source "/opt/ros/$ROS_DISTRO/setup.bash"
+RUN exec "$@"
 
 # Create a catkin workspace with the package under integration.
-
 RUN mkdir -p ~/sara_ws/src
 WORKDIR ~/sara_ws/src
 RUN catkin_init_workspace
