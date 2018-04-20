@@ -108,10 +108,10 @@
     uri: https://github.com/ildoonet/tf-pose-estimation.git
 - git:
     local-name: vizbox
-    uri: git@github.com:WalkingMachine/vizbox.git
+    uri: https://github.com/WalkingMachine/vizbox.git
 - git:
     local-name: wm_color_detector
-    uri: git@github.com:WalkingMachine/wm_color_detector.git
+    uri: https://github.com/WalkingMachine/wm_color_detector.git
 - git:
     local-name: wm_data_collector
     uri: https://github.com/WalkingMachine/wm_data_collector.git
