@@ -1,0 +1,162 @@
+- git:
+    local-name: darknet_ros
+    uri: https://github.com/WalkingMachine/darknet_ros.git
+- git:
+    local-name: flexbe_behavior_engine
+    uri: https://github.com/team-vigir/flexbe_behavior_engine.git
+- git:
+    local-name: generic_flexbe_states
+    uri: https://github.com/FlexBE/generic_flexbe_states.git
+- git:
+    local-name: lab_ros_speech_to_text
+    uri: https://github.com/WalkingMachine/lab_ros_speech_to_text.git
+- git:
+    local-name: lu4r_ros
+    uri: https://github.com/WalkingMachine/lu4r_ros.git
+- git:
+    local-name: moveit
+    uri: https://github.com/ros-planning/moveit.git
+- git:
+    local-name: object_recognition_msgs
+    uri: https://github.com/wg-perception/object_recognition_msgs.git
+- git:
+    local-name: people
+    uri: https://github.com/kdhansen/people.git
+- git:
+    local-name: robot_pose_publisher
+    uri: https://github.com/GT-RAIL/robot_pose_publisher.git
+- git:
+    local-name: roboteq
+    uri: https://github.com/WalkingMachine/roboteq.git
+- git:
+    local-name: robotiq_140_description
+    uri: https://github.com/WalkingMachine/robotiq_140_description.git
+- git:
+    local-name: robotiq_140_gripper
+    uri: https://github.com/WalkingMachine/robotiq_140_gripper.git
+- git:
+    local-name: robotiq_hardware
+    uri: https://github.com/walkingmachinegraveyard/robotiq_hardware.git
+- git:
+    local-name: ros-video-recorder
+    uri: https://github.com/ildoonet/ros-video-recorder.git
+- git:
+    local-name: sara-perception/linemod
+    uri: https://github.com/WalkingMachine/linemod.git
+- git:
+    local-name: sara-perception/object_recognition_core
+    uri: http://github.com/wg-perception/object_recognition_core
+- git:
+    local-name: sara-perception/object_recognition_msgs
+    uri: http://github.com/wg-perception/object_recognition_msgs
+- git:
+    local-name: sara-perception/object_recognition_ros
+    uri: http://github.com/wg-perception/object_recognition_ros
+- git:
+    local-name: sara-perception/object_recognition_ros_visualization
+    uri: http://github.com/wg-perception/object_recognition_ros_visualization
+- git:
+    local-name: sara-perception/objects_library
+    uri: https://github.com/WalkingMachine/objects_library.git
+- git:
+    local-name: sara-perception/ork_renderer
+    uri: http://github.com/wg-perception/ork_renderer
+- git:
+    local-name: sara-perception/reconstruction
+    uri: http://github.com/wg-perception/reconstruction
+- git:
+    local-name: sara-perception/wm_objects_selection
+    uri: https://github.com/WalkingMachine/wm_objects_selection.git
+- git:
+    local-name: sara_behaviors
+    uri: https://github.com/WalkingMachine/sara_behaviors.git
+- git:
+    local-name: sara_control
+    uri: https://github.com/WalkingMachine/sara_control.git
+- git:
+    local-name: sara_description
+    uri: https://github.com/WalkingMachine/sara_description.git
+- git:
+    local-name: sara_launch
+    uri: https://github.com/WalkingMachine/sara_launch.git
+- git:
+    local-name: sara_moveit
+    uri: https://github.com/WalkingMachine/sara_moveit.git
+- git:
+    local-name: sara_msgs
+    uri: https://github.com/WalkingMachine/sara_msgs.git
+- git:
+    local-name: sara_navigation
+    uri: https://github.com/WalkingMachine/sara_navigation
+- git:
+    local-name: sara_teleop
+    uri: https://github.com/WalkingMachine/sara_teleop
+- git:
+    local-name: sara_udev
+    uri: https://github.com/WalkingMachine/sara_udev.git
+- git:
+    local-name: sara_ui
+    uri: https://github.com/WalkingMachine/sara_ui.git
+- git:
+    local-name: soem
+    uri: https://github.com/smits/soem.git
+- git:
+    local-name: spencer_people_tracking
+    uri: https://github.com/spencer-project/spencer_people_tracking.git
+- git:
+    local-name: tf-pose-estimation
+    uri: https://github.com/ildoonet/tf-pose-estimation.git
+- git:
+    local-name: vizbox
+    uri: git@github.com:WalkingMachine/vizbox.git
+- git:
+    local-name: wm_color_detector
+    uri: git@github.com:WalkingMachine/wm_color_detector.git
+- git:
+    local-name: wm_data_collector
+    uri: https://github.com/WalkingMachine/wm_data_collector.git
+- git:
+    local-name: wm_dynamixel
+    uri: https://github.com/WalkingMachine/wm_dynamixel.git
+- git:
+    local-name: wm_frame_to_box
+    uri: https://github.com/WalkingMachine/wm_frame_to_box.git
+- git:
+    local-name: wm_kinova_hardware_interface
+    uri: https://github.com/WalkingMachine/wm_kinova_hardware_interface.git
+- git:
+    local-name: wm_mecanum_cmd
+    uri: https://github.com/WalkingMachine/wm_mecanum_cmd
+- git:
+    local-name: wm_moveit_server
+    uri: https://github.com/WalkingMachine/wm_moveit_server.git
+- git:
+    local-name: wm_odometry_feedback
+    uri: https://github.com/WalkingMachine/wm_odometry_feedback.git
+- git:
+    local-name: wm_people_follower
+    uri: https://github.com/WalkingMachine/wm_people_follower.git
+- git:
+    local-name: wm_roboteq_hardware_interface
+    uri: https://github.com/WalkingMachine/wm_roboteq_hardware_interface
+- git:
+    local-name: wm_robotiq_hardware_interface
+    uri: https://github.com/WalkingMachine/wm_robotiq_hardware_interface.git
+- git:
+    local-name: wm_sound_library
+    uri: https://github.com/WalkingMachine/wm_sound_library.git
+- git:
+    local-name: wm_speech_recognition
+    uri: https://github.com/WalkingMachine/wm_speech_recognition.git
+- git:
+    local-name: wm_speech_splitter
+    uri: https://github.com/WalkingMachine/wm_speech_splitter.git
+- git:
+    local-name: wm_trajectory_manager
+    uri: https://github.com/WalkingMachine/wm_trajectory_manager.git
+- git:
+    local-name: wm_tts
+    uri: https://github.com/WalkingMachine/wm_tts.git
+- git:
+    local-name: yocs_msgs
+    uri: https://github.com/yujinrobot/yocs_msgs.git
