@@ -20,7 +20,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
     python-wstool \
     ros-kinetic-catkin \
     libttspico-utils \
-    mpg123 \
+    #mpg123 \ # doesnt seem to work in a docker
     libgnutls28-dev \
     && rm -rf /var/lib/apt/lists/*
 
