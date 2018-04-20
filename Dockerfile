@@ -7,6 +7,12 @@ RUN apt-get update && apt-get install -y \
     ros-kinetic-desktop-full=1.3.1-0* \
     && rm -rf /var/lib/apt/lists/*
 
+# Enable Ubuntu Universe, Multiverse, and deb-src for main.
+RUN sed -i 's/^#\s*\(deb.*main restricted\)$/\1/g' /etc/apt/sources.list
+RUN sed -i 's/^#\s*\(deb.*universe\)$/\1/g' /etc/apt/sources.list
+RUN sed -i 's/^#\s*\(deb.*multiverse\)$/\1/g' /etc/apt/sources.list
+RUN apt-get update
+
 
 RUN apt-get install -y \
     python-catkin-pkg \
