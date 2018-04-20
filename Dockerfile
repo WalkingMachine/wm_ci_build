@@ -12,10 +12,10 @@ RUN apt-get install -y \
     python-catkin-pkg \
     python-rosdep \
     python-wstool \
-    ros-$ROS_DISTRO-catkin \
+    ros-kinetic-catkin \
     libttspico-utils \
     mpg123 \
-    libgnutls28-dev \
+    libgnutls28-dev
 
 RUN source /opt/ros/kinetic/setup.bash
 
