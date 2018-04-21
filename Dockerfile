@@ -42,13 +42,7 @@ ENTRYPOINT ["/ros_entrypoint.sh"]
 CMD ["bash"]
 
 
-# Create a catkin workspace with the package under integration.
-RUN mkdir -p ~/sara_ws/src
-WORKDIR ~/sara_ws/src
-RUN catkin_init_workspace
-WORKDIR ~/sara_ws
-RUN catkin_make
-RUN /bin/bash -c "source devel/setup.bash"
+
 
 # Install all dependencies, using wstool first and rosdep second.
 
