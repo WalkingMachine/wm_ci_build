@@ -1,7 +1,4 @@
 - git:
-    local-name: darknet_ros
-    uri: https://github.com/WalkingMachine/darknet_ros.git
-- git:
     local-name: flexbe_behavior_engine
     uri: https://github.com/team-vigir/flexbe_behavior_engine.git
 - git:
