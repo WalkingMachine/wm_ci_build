@@ -74,12 +74,6 @@
     local-name: soem
     uri: https://github.com/smits/soem.git
 - git:
-    local-name: spencer_people_tracking
-    uri: https://github.com/spencer-project/spencer_people_tracking.git
-- git:
-    local-name: tf-pose-estimation
-    uri: https://github.com/ildoonet/tf-pose-estimation.git
-- git:
     local-name: vizbox
     uri: https://github.com/WalkingMachine/vizbox.git
 - git:
