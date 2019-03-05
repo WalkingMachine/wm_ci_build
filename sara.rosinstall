@@ -83,9 +83,6 @@
     local-name: vizbox
     uri: https://github.com/WalkingMachine/vizbox.git
 - git:
-    local-name: wm_color_detector
-    uri: https://github.com/WalkingMachine/wm_color_detector.git
-- git:
     local-name: wm_data_collector
     uri: https://github.com/WalkingMachine/wm_data_collector.git
 - git:
