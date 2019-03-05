@@ -74,9 +74,6 @@
     local-name: vizbox
     uri: https://github.com/WalkingMachine/vizbox.git
 - git:
-    local-name: wm_data_collector
-    uri: https://github.com/WalkingMachine/wm_data_collector.git
-- git:
     local-name: wm_dynamixel
     uri: https://github.com/WalkingMachine/wm_dynamixel.git
 - git:
